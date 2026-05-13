@@ -1,0 +1,310 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Ukiwe Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(6, 77, 49, 0.3);
+        }
+
+        header img {
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            border: 0 solid rgb(14, 231, 98);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            background: #111827;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: cyan;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: cyan;
+            font-size: 36px;
+        }
+
+        .about,
+        .contact-box {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img 
+     {
+        src:\Users\dell\Desktop\ukiwe.dev1\images\images.jpg ;
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            background: cyan;
+            color: black;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #1e293b;
+            color: white;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            background: cyan;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #27111f;
+            margin-top: 50px;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="/Users\dell\Desktop\Ukiwe.dev1\image\photo.png">
+
+        <h1> Emmanuel Ukiwe</h1>
+
+        <h3>Web Developer | Entrepreneur</h3><br>
+
+        <p>Ukiwe Global Solutions Limited</p>
+
+        <a href="cv.pdf" download>
+            <button>Download CV</button>
+        </a>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a passionate developer focused on creating modern websites, 
+                responsive digital solutions, and business-driven online systems. Am also a detailed data analtst and 
+                I enjoy combining technology and entrepreneurship to solve real-world problems.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <img src="c:\Users\dell\Desktop\Ukiwe.dev1\image\download - Copy.png " alt="Business Website">
+
+                <div class="card-content">
+                    <h3>Business Website</h3>
+                    <p>A responsive website for a local business.</p>
+
+                    <button>View Project</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="c:\Users\dell\Desktop\Ukiwe.dev1\image\images.jpg" alt="E-commerce Store">
+
+                <div class="card-content">
+                    <h3>E-commerce Store</h3>
+                    <p>Modern online shopping platform.</p>
+
+                    <button>View Project</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="c:\Users\dell\Desktop\Ukiwe.dev1\image\20161116eportfolio.jpg " alt="Portfolio Website">
+
+                <div class="card-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Professional animated portfolio website.</p>
+
+                    <button>View Project</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Responsive Design</div>
+            <div class="skill-box">GitHub</div>
+            <div class="skill-box">UI/UX</div>
+            <div class="skill-box">React</div>
+            <div class="skill-box">Tailwind CSS</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-box">
+
+            <p>
+                Phone: 07032212265<br>
+                Email: ukiweglobal.solutions@gmail.com
+            </p>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <h3>We Give You The Best (Quality Assured)</h3>
+
+        <p>© 2026 Ukiwe Emmanuel. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2347032212265" class="whatsapp">
+        💬
+    </a>
+
+    <script>
+       
+       
+        function {
+            alert("Thank you for contacting Ukiwe Global Solutions Limited.")  
+        
+      }
+    </script>
+
+</body>
+</html>
+```
